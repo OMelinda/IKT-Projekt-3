@@ -1,3 +1,101 @@
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+* {box-sizing: border-box;}
+      body {
+        background-image: url(../img/background3.jpg);
+        font-family: Verdana, sans-serif;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+      .mySlides {
+        display: none;
+        }
+      img {
+        vertical-align: middle;
+
+        }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -50px;
+        position: absolute;
+        left: calc((100% - 90px) / 2);
+        background: url(../images/logo.png);
+        width: 120px;
+        height: 100px;    
+        background-size: contain;
+        }
+    .navbar{
+        height: 50px;
+        z-index: 999;
+        
+        }
+    .nav-link{
+        text-align: center;
+        margin-left: 11px;
+        border-radius: 7px;
+    }
+
+    
+    #hatter{
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 1100px;
+    height: 1000px;
+    margin: auto;
+    }
+
+     /*Slideshow*/ 
+
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        padding-top: 30px;
+      }
+      
+      .text {
+        color: #2e2525;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active {
+        background-color: #717171;
+      }
+      
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 6s;
+        animation-name: fade;
+        animation-duration: 6s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+      /*Slideshow vége*/
+
